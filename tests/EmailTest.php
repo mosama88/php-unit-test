@@ -11,7 +11,7 @@ final class EmailTest extends TestCase
     {
         //AAA
         // Arrange: إعداد البيانات
-        $string = 'mosama88@hotmail.com';
+        $string = 'mosama@gmail.com';
 
         // Act: تنفيذ العملية
         $email = Email::fromString($string);
@@ -23,7 +23,7 @@ final class EmailTest extends TestCase
     public function testCannotBeCreatedFromInvalidEmail(): void
     {
         $this->expectException(InvalidArgumentException::class);
-
         Email::fromString('invalid');
+
     }
 }
