@@ -9,10 +9,14 @@ final class EmailTest extends TestCase
 {
     public function testCanBeCreatedFromValidEmail(): void
     {
+        //AAA
+        // Arrange: إعداد البيانات
         $string = 'mosama88@hotmail.com';
 
+        // Act: تنفيذ العملية
         $email = Email::fromString($string);
 
+        // Assert: التحقق من النتيجة
         $this->assertSame($string, $email->asString());
     }
 

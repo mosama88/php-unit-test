@@ -22,6 +22,8 @@ final class Email
         return new self($email);
     }
 
+
+    // getter
     public function asString(): string
     {
         return $this->email;
@@ -39,3 +41,16 @@ final class Email
         }
     }
 }
+
+// $email = "mosama";  // مثال على بريد غير صالحtry {
+// $emailTest = Email::fromString($email);
+
+// if ($email == false) {
+//     echo "$email  Email is not valid please write Valid Email";
+// }
+
+// function calc(int $a, int $b)
+// {
+//     return $a + $b;
+// }
+// echo calc(10, 15);
